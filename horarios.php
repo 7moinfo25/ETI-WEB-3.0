@@ -28,7 +28,7 @@
 <body>
   <?php include 'header.php'; ?>
   <div class="container">
-    <h1>Horarios</h1>
+    <h1>Plan de Estudio</h1>
     <div class="controls">
       <div class="year-selector">
         <label for="year-select">Seleccionar Año:</label>
@@ -53,18 +53,15 @@
     </div>
     
     <div class="schedule-container">
-      <table id="schedule-table" class="schedule-table">
+      <table id="plan-table" class="plan-table">
         <thead>
           <tr>
-            <th>Horario</th>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miércoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
+            <th>Materia</th>
+            <th>Horas Semanales</th>
+            <th>Total de Horas</th>
           </tr>
         </thead>
-        <tbody id="schedule-body">
+        <tbody id="plan-body">
           <!-- El contenido de la tabla se generará dinámicamente con JavaScript -->
         </tbody>
       </table>
