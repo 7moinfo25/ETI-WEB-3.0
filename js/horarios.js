@@ -10,129 +10,298 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ciclo básico (1ro a 3ro)
     1: {
       common: [
-        { materia: "Matemática", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Lengua", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Sistemas Tecnológicos", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72 },
+        { materia: "Matemática", horasSemanales: 4, totalHoras: 144, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/matematica.pdf" },
+
+        { materia: "Lengua", horasSemanales: 4, totalHoras: 144, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/lengua.pdf" },
+
+        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ciudadania.pdf" },
+
+        { materia: "Sistemas Tecnológicos", horasSemanales: 3, totalHoras: 108, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/sistemas-tecnologicos.pdf" },
+
+        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ciencias-naturales.pdf" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/educacion-fisica.pdf" },
+
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ingles.pdf" },
+
+        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72, 
+          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/educacion-artistica.pdf" },
       ],
     },
     2: {
       common: [
-        { materia: "Matemática", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Lengua", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Historia", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Geografía", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Arte", horasSemanales: 2, totalHoras: 72 },
+        { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
       ],
     },
     3: {
       common: [
-        { materia: "Matemática", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Lengua", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Historia", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Geografía", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Arte", horasSemanales: 2, totalHoras: 72 },
+        { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
       ],
     },
     // Ciclo superior - Informática (4to a 7mo)
     4: {
       informatica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Programación I", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Física", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Sistemas Operativos", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Redes", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Programación I", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Sistemas Operativos", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Redes", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Electrotecnia I", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Física", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Mecánica", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia I", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Mecánica", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
     },
     5: {
       informatica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Programación II", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Física", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Bases de Datos", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Redes Avanzadas", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Programación II", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Bases de Datos", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Redes Avanzadas", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Electrotecnia II", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Física", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Automatización", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia II", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Automatización", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
     },
     6: {
       informatica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Programación III", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Sistemas de Información", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Seguridad Informática", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Programación III", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Sistemas de Información", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Seguridad Informática", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Electrotecnia III", horasSemanales: 4, totalHoras: 144 },
-        { materia: "Máquinas Eléctricas", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Control Industrial", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216 },
+        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia III", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Máquinas Eléctricas", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Control Industrial", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
       ],
     },
     7: {
       informatica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Desarrollo de Proyectos", horasSemanales: 6, totalHoras: 216 },
-        { materia: "Tecnologías Emergentes", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Legislación y Ética", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144 },
+        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Desarrollo de Proyectos", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
+
+        { materia: "Tecnologías Emergentes", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Legislación y Ética", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Proyecto Técnico", horasSemanales: 6, totalHoras: 216 },
-        { materia: "Innovación Tecnológica", horasSemanales: 3, totalHoras: 108 },
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Legislación Laboral", horasSemanales: 2, totalHoras: 72 },
-        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144 },
+        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Proyecto Técnico", horasSemanales: 6, totalHoras: 216,
+          pdf: "" },
+
+        { materia: "Innovación Tecnológica", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Legislación Laboral", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
       ],
     },
   }
@@ -161,8 +330,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Llenar tabla
     data.forEach((item) => {
       const row = document.createElement("tr")
+
+      let materiaCell
+      if (item.pdf) { //si tiene pdf lo genera como link
+        materiaCell = `<a href="${item.pdf}" target="_blank" class="materia-link">${item.materia}</a>`
+      } else { //sino tiene lo genera como texto normal
+        materiaCell = item.materia
+      }
+
       row.innerHTML = `
-        <td>${item.materia}</td>
+        <td>${materiaCell}</td>
         <td>${item.horasSemanales}</td>
         <td>${item.totalHoras}</td>
       `
