@@ -58,7 +58,7 @@
                         <div class="modality-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h3>Técnico en Informática</h3>
+                        <h3>Técnico en Informática Personal y Profesional</h3>
                         <p>Forma profesionales capacitados en el desarrollo de software, redes informáticas, y mantenimiento de
                             sistemas computacionales.</p>
                         <ul>
