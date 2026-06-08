@@ -191,6 +191,7 @@ header {
 
 /* Dropdown styles */
 .dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -206,6 +207,7 @@ header {
 }
 
 .nav-item:hover .dropdown-menu {
+    display: block;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
