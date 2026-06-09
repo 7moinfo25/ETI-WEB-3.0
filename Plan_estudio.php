@@ -9,22 +9,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" href="imagenes/escudo.png" type="image/png">
 </head>
+
 <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.php">
-                        <img src="imagenes/escudo.png" alt="Escudo de la Escuela Técnica">
-                        <h1>Escuela Técnica N°1</h1>
-                    </a>
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar..." class="search-input">
-                    <button class="search-button"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.php">
+            <img src="imagenes/escudo.png" alt="Escudo de la Escuela Técnica">
+            <h1>Escuela Técnica N°1</h1>
+          </a>
         </div>
-    </header>
+        
+        <div class="search-container">
+          <input type="text" placeholder="Buscar..." class="search-input">
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+</header>
+
 <body>
   <?php include 'header.php'; ?>
   <div class="container">
