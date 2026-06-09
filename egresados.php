@@ -47,7 +47,7 @@
 
         <div class="carousel-inner">
 
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="imagenes/egresados/1971.webp" class="d-block w-100" alt="1971">
             </div>
 
@@ -267,7 +267,7 @@
                 <img src="imagenes/egresados/2023.webp" class="d-block w-100" alt="2023">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img src="imagenes/egresados/2025.webp" class="d-block w-100" alt="2025">
             </div>
         

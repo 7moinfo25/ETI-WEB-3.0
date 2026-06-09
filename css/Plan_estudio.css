@@ -101,7 +101,7 @@ select:focus {
 }
 
 .plan-table tbody tr:hover {
-  background-color: #f8f9fa;
+  background-color:  #ade1e1;
   transition: background-color 0.2s ease;
 }
 
@@ -123,6 +123,8 @@ select:focus {
   border-bottom: 1px solid #e9ecef;
 }
 
+
+
 .schedule-table td {
   padding: 15px 20px;
   border-bottom: 1px solid #e9ecef;
@@ -136,7 +138,14 @@ select:focus {
   background-color: #f8f9fa;
 }
 
+.plan-table td:nth-child(2),
+.plan-table td:nth-child(3) {
+    padding-left: 70px;
+}
 
+tr:nth-child(even){
+  background-color: #f5f5f5;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
