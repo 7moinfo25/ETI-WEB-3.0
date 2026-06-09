@@ -62,7 +62,7 @@
           </tr>
         </thead>
         <tbody id="plan-body">
-          <!-- El contenido de la tabla se generará dinámicamente con JavaScript -->
+          <!-- El contenido de la tabla se generará dinámicamente con JavaScript (NO tocar nada)-->
         </tbody>
       </table>
     </div>
