@@ -73,3 +73,8 @@
 .carousel-control-next, .carousel-control-prev {
   width: 8%;
 }  
+
+
+.footer-col ul {
+  padding: 0;
+}
