@@ -12,9 +12,10 @@
 
 
 </head>
+
 <body>
     
-    <<?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <?php include 'navbar.php'; ?>
 
@@ -293,12 +294,11 @@
 
     <div id="popupMessage" class="popup-message"></div>
 
-    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
+<script>
 document.getElementById('searchInput-sw').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         searchImage();
