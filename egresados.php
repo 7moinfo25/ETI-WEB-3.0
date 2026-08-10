@@ -12,13 +12,13 @@
 
 
 </head>
-
 <body>
     
     <?php include 'header.php'; ?>
 
     <?php include 'navbar.php'; ?>
 
+    
     <div class="search-container-sw">
         <input type="text"
            placeholder="Buscar el año, ej: 2004"
@@ -34,7 +34,7 @@
 
         <div class="carousel-inner">
 
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img src="imagenes/egresados/1971.webp" class="d-block w-100" alt="1971">
             </div>
 
@@ -211,7 +211,7 @@
             </div>
 
             <div class="carousel-item">
-                <img src="imagenes/egresados/2014.webp" class="d-block w-100" alt="1995">
+                <img src="imagenes/egresados/2014.webp" class="d-block w-100" alt="2014">
             </div>
 
             <div class="carousel-item">
@@ -254,7 +254,7 @@
                 <img src="imagenes/egresados/2023.webp" class="d-block w-100" alt="2023">
             </div>
 
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="imagenes/egresados/2025.webp" class="d-block w-100" alt="2025">
             </div>
         
@@ -294,60 +294,61 @@
 
     <div id="popupMessage" class="popup-message"></div>
 
+    <!-- Footer -->
     <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-document.getElementById('searchInput-sw').addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-        searchImage();
-    }
-});
+    <script>
+        document.getElementById('searchInput-sw').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchImage();
+            }
+        });
 
-function searchImage() {
+        function searchImage() {
 
-    const query = document
-        .getElementById('searchInput-sw')
-        .value
-        .trim()
-        .toLowerCase();
+            const query = document
+                .getElementById('searchInput-sw')
+                .value
+                .trim()
+                .toLowerCase();
 
-    const items = document.querySelectorAll('#carouselExample .carousel-item');
+            const items = document.querySelectorAll('#carouselExample .carousel-item');
 
-    for (let i = 0; i < items.length; i++) {
+            for (let i = 0; i < items.length; i++) {
 
-        const img = items[i].querySelector('img');
+                const img = items[i].querySelector('img');
 
-        const alt = img.getAttribute('alt').toLowerCase();
-        const src = img.getAttribute('src').toLowerCase();
+                const alt = img.getAttribute('alt').toLowerCase();
+                const src = img.getAttribute('src').toLowerCase();
 
-        if (alt.includes(query) || src.includes(query)) {
+                if (alt.includes(query) || src.includes(query)) {
 
-            const carousel = bootstrap.Carousel.getOrCreateInstance(
-                document.getElementById('carouselExample')
-            );
+                    const carousel = bootstrap.Carousel.getOrCreateInstance(
+                        document.getElementById('carouselExample')
+                    );
 
-            carousel.to(i);
+                    carousel.to(i);
 
-            return;
+                    return;
+                }
+            }
+
+            showPopupMessage('No se encontró ninguna coincidencia.');
         }
-    }
 
-    showPopupMessage('No se encontró ninguna coincidencia.');
-}
+        function showPopupMessage(message) {
 
-function showPopupMessage(message) {
+            const popup = document.getElementById('popupMessage');
 
-    const popup = document.getElementById('popupMessage');
+            popup.textContent = message;
+            popup.classList.add('show');
 
-    popup.textContent = message;
-    popup.classList.add('show');
-
-    setTimeout(() => {
-        popup.classList.remove('show');
-    }, 2500);
-}
-</script>
+            setTimeout(() => {
+                popup.classList.remove('show');
+            }, 2500);
+        }
+    </script>
 </body>
 </html>
