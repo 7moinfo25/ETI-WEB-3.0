@@ -13,22 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.php">
-                        <img src="imagenes/escudo.png" alt="Escudo de la Escuela Técnica">
-                        <h1>Escuela Técnica N°1</h1>
-                    </a>
-                </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar..." class="search-input">
-                    <button class="search-button"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-    </header>
     <?php include 'header.php'; ?>
     <main>
         <section class="hero-section">
