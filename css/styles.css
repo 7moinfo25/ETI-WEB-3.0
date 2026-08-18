@@ -742,8 +742,7 @@ footer {
 /* Responsive styles */
 @media (min-width: 768px) {
     .welcome-grid {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+    grid-template-columns: 1fr;
     }
 
     .button-group {
@@ -751,7 +750,7 @@ footer {
     }
 
     .welcome-image {
-        height: 400px;
+        display: none;
     }
 
     .content-grid {
@@ -768,6 +767,21 @@ footer {
 
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .welcome-section {
+        position: relative;
+        background-image: linear-gradient(rgba(8, 40, 70, 0.75), rgba(8, 40, 70, 0.75)), url("../imagenes/escuelafoto.jpeg");
+        background-size: cover;
+        background-position: center;
+        padding: 6rem 1.5rem;
+        color: #fff;
+    }
+
+    .welcome-content {
+        max-width: 600px;
+        position: relative;
+        z-index: 1;
     }
 }
 
