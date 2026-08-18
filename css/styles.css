@@ -774,7 +774,7 @@ footer {
         background-image: linear-gradient(rgba(8, 40, 70, 0.75), rgba(8, 40, 70, 0.75)), url("../imagenes/escuelafoto.jpeg");
         background-size: cover;
         background-position: center;
-        padding: 6rem 1.5rem;
+        padding: 8rem 1.5rem;
         color: #fff;
     }
 
@@ -783,6 +783,21 @@ footer {
         position: relative;
         z-index: 1;
     }
+
+    .welcome-content {
+        animation: fadeInDown 2s ease-out;
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+}
 }
 
 @media (max-width: 991px) {
