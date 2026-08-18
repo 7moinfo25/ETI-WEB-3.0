@@ -255,7 +255,7 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="imagenes/egresados/2025.webp" class="d-block w-100" alt="2025">
+                    <img src="imagenes/egresados/2025.png" class="d-block w-100" alt="2025">
                 </div>
             
                 
