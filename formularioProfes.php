@@ -172,7 +172,6 @@
       });
 
       const result = await response.json();
-      console.log (data);
       if (result.success) {
         mensaje.style.color = 'green';
         mensaje.innerText = 'Archivo subido exitosamente.';
