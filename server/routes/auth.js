@@ -12,7 +12,6 @@ router.post('/register', async (req, res) => {
   const { nombre, email, contrasena } = req.body;
 
   try {
-    // ✅ Cambiado de 'Profesor' a 'Professor'
     const existe = await Professor.findOne({ email });
     if (existe) {
       return res.status(400).json({ success: false, message: 'Ya existe un usuario con ese email' });
