@@ -33,7 +33,7 @@ const storage = multer.diskStorage({
     await busboyBodyParser(req);
 
     const categoria = req.body.category || 'otros';
-    const anio = req.body.año || 'sin_año';
+    const anio = req.body.anio || 'sin_año';
 
     const uploadPath = path.join(__dirname, '../uploads', categoria, anio);
     try {
@@ -101,6 +101,8 @@ router.get('/files', authenticateToken, async (req, res) => {
 
 // POST /upload - Subir archivo
 router.post('/upload', authenticateToken, upload.single('file'), async (req, res) => {
+  // console.log('Datos ingresados manualmente recibidos:', req.body); // Para ver la descripción, categoria, año y el nombre de la tarea.
+  // console.log('Datos del archivo recibido:', req.file); // Para ver los datos del archivo
   try {
     if (!req.file) {
       return res.status(400).json({ success: false, message: 'No se proporcionó archivo' });
