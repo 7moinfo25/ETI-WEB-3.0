@@ -770,13 +770,19 @@ footer {
     }
 
     .welcome-section {
-        position: relative;
-        background-image: linear-gradient(rgba(8, 40, 70, 0.75), rgba(8, 40, 70, 0.75)), url("../imagenes/escuelafoto.jpeg");
-        background-size: cover;
-        background-position: center;
-        padding: 8rem 1.5rem;
-        color: #fff;
-    }
+    position: relative;
+
+    background-image:
+        linear-gradient(rgba(8, 40, 70, 0.75), rgba(8, 40, 70, 0.75)),
+        url("../imagenes/escuelafoto.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 14rem 1.5rem;
+    color: #fff;
+}
 
     .welcome-content {
         max-width: 600px;

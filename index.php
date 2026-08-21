@@ -6,6 +6,8 @@
     <title>Escuela Técnica</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/estadisticas.css">
+    <link rel="stylesheet" href="css/boton_mapa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="imagenes/escudo.png" type="image/png">
 </head>
@@ -58,6 +60,39 @@
             </div>
         </section>
 
+        <!--ESTADISTICAS-->
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="64">0</h2>
+                
+            </div>
+            <p>Años de trayectoria</p>
+        </div>
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="377">0</h2>
+    
+            </div>
+            <p>Estudiantes activos</p>
+        </div>
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="2">0</h2>
+            </div>
+            <p>Especialidades técnicas</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
         <!-- Main Content with News on Right -->
         <section class="main-content">
             <div class="container">
@@ -102,10 +137,21 @@
                         <!-- Tu HTML donde quieres mostrar el mapa -->
                         <div id="mapa" style="width: 100%; height: 400px; border-radius: 10px;"></div>
 
-                        <!-- Al final de tu body -->
-                        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
-                        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
-                        crossorigin=""></script>
+<!-- boton del mapa -->
+<a
+  class="map-btn-wrapper"
+  href="https://maps.app.goo.gl/aaeUxEye4HNBApg48"
+  target="_blank">
+
+  <span class="map-btn">Google Maps</span>
+  <span class="pinpoint"></span>
+
+</a>
+
+<!-- Al final de tu body -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" 
+crossorigin=""></script>
 
 <!-- Función de mapa -->
 <script src="js/script/mapa.js"></script>
@@ -135,5 +181,6 @@
     <script src="js/login.js"></script>
     <script src="js/script.js"></script>
     <script src="js/easteregg.js"></script>
+    <script src="js/estadisticas.js"></script>
 </body>
 </html>
