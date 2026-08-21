@@ -785,7 +785,7 @@ footer {
     }
 
     .welcome-content {
-        animation: fadeInDown 2s ease-out;
+        animation: fadeInDown 1s ease-out;
     }
 
     @keyframes fadeInDown {
