@@ -42,7 +42,11 @@ const verificarRol = (rolesPermitidos) => {
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadPath = path.join(__dirname, '../uploads');
-    cb(null, uploadPath);
+    
+    // Si no existe la carpeta, la crea automáticamente
+    fs.mkdir(uploadPath, { recursive: true })
+      .then(() => cb(null, uploadPath))
+      .catch(err => cb(err));
   },
 
   filename: (req, file, cb) => {
