@@ -89,7 +89,7 @@ const upload = multer({
 // GET /files - Obtener todos los archivos del profesor
 router.get('/files', authenticateToken, async (req, res) => {
   try {
-    const files = await File.find({ professorId: req.user.id })
+    const files = await File.find({ UserId: req.user.id })
       .sort({ uploadDate: -1 });
     
     res.json({ success: true, files });
@@ -119,8 +119,8 @@ router.post('/upload', authenticateToken, upload.single('file'), async (req, res
       path: req.file.path,
       description: description || '',
       category: category || 'general',
-      professorId: req.user.id,
-      professorName: req.user.nombre
+      UserId: req.user.id,
+      UserName: req.user.nombre
     });
 
     await newFile.save();
@@ -149,7 +149,7 @@ router.get('/download/:id', authenticateToken, async (req, res) => {
   try {
     const file = await File.findOne({
       _id: req.params.id,
-      professorId: req.user.id
+      UserId: req.user.id
     });
 
     if (!file) {
@@ -180,7 +180,7 @@ router.delete('/files/:id', authenticateToken, async (req, res) => {
   try {
     const file = await File.findOne({
       _id: req.params.id,
-      professorId: req.user.id
+      UserId: req.user.id
     });
 
     if (!file) {
@@ -210,7 +210,7 @@ router.put('/files/:id', authenticateToken, async (req, res) => {
     const { description, category } = req.body;
     
     const file = await File.findOneAndUpdate(
-      { _id: req.params.id, professorId: req.user.id },
+      { _id: req.params.id, UserId: req.user.id },
       { description, category },
       { new: true }
     );
@@ -230,7 +230,7 @@ router.put('/files/:id', authenticateToken, async (req, res) => {
 router.get('/files/category/:category', authenticateToken, async (req, res) => {
   try {
     const files = await File.find({
-      professorId: req.user.id,
+      UserId: req.user.id,
       category: req.params.category
     }).sort({ uploadDate: -1 });
 

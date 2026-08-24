@@ -5,22 +5,22 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const router = express.Router();
-const Professor = require('../models/Professor');
+const User = require('../models/User');
 
 // POST /register
 router.post('/register', async (req, res) => {
   const { nombre, email, contrasena } = req.body;
 
   try {
-    const existe = await Professor.findOne({ email });
+    const existe = await User.findOne({ email });
     if (existe) {
       return res.status(400).json({ success: false, message: 'Ya existe un usuario con ese email' });
     }
 
     const contrasenaHasheada = await bcrypt.hash(contrasena, 10);
 
-    const nuevoProfessor = new Professor({ nombre, email, contrasena: contrasenaHasheada });
-    await nuevoProfessor.save();
+    const nuevoUser = new User({ nombre, email, contrasena: contrasenaHasheada });
+    await nuevoUser.save();
 
     res.status(201).json({ success: true, message: 'Registro exitoso' });
   } catch (error) {
@@ -33,7 +33,7 @@ router.post('/login', async (req, res) => {
   const { email, contrasena } = req.body;
 
   try {
-    const profesor = await Professor.findOne({ email });
+    const profesor = await User.findOne({ email });
     if (!profesor) {
       return res.status(401).json({ success: false, message: 'Credenciales inválidas' });
     }
