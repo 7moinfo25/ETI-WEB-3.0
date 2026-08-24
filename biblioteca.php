@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/informatica.css">
     <link rel="stylesheet" href="css/biblioteca.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="imagenes/escudo.png" type="image/png">
+    <link rel="icon" href="imagenes/escudo3.png" type="image/png">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
