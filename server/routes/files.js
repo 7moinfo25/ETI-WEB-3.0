@@ -18,37 +18,37 @@ const authenticateToken = (req, res, next) => {
 
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
     if (err) {
-      return res.status(403).json({ success: false, message: 'Token inválido' });
+      return res.status(403).json({ success: false, message: 'Token inválido' }); 
     }
     req.user = user;
     next();
   });
 };
 
+// Esto es la verificacion de roles
+const verificarRol = (rolesPermitidos) => {
+  return (req, res, next) => {
+    const roles = req.user.roles; // Agarrar los roles del usuario desde el token
+    const tieneAcceso = rolesPermitidos.some(rol => roles.includes(rol)); // 
+
+    if (!tieneAcceso) {
+      return res.status(403).json({ success: false, message: 'No tenés permiso para esto' }); 
+    }
+    next();
+  };
+};
+
 // configuración de multer para el almacenamiento de archivos
 const storage = multer.diskStorage({
-  destination: async (req, file, cb) => {
-    // Extraemos los campos desde los valores del form-data manualmente usando un "parser auxiliar"
-    const busboyBodyParser = require('busboy-body-parser');
-    await busboyBodyParser(req);
-
-    const categoria = req.body.category || 'otros';
-    const anio = req.body.anio || 'sin_año';
-
-    const uploadPath = path.join(__dirname, '../uploads', categoria, anio);
-    try {
-      await fs.mkdir(uploadPath, { recursive: true });
-      cb(null, uploadPath);
-    } catch (err) {
-      cb(err);
-    }
+  destination: (req, file, cb) => {
+    const uploadPath = path.join(__dirname, '../uploads');
+    cb(null, uploadPath);
   },
 
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
     const extension = path.extname(file.originalname);
-    const filename = `${uniqueSuffix}${extension}`;
-    cb(null, filename);
+    cb(null, `${uniqueSuffix}${extension}`);
   }
 });
 
@@ -100,7 +100,7 @@ router.get('/files', authenticateToken, async (req, res) => {
 });
 
 // POST /upload - Subir archivo
-router.post('/upload', authenticateToken, upload.single('file'), async (req, res) => {
+router.post('/upload', authenticateToken, verificarRol(['profesor', 'admin']), upload.single('file'), async (req, res) => {
   // console.log('Datos ingresados manualmente recibidos:', req.body); // Para ver la descripción, categoria, año y el nombre de la tarea.
   // console.log('Datos del archivo recibido:', req.file); // Para ver los datos del archivo
   try {
@@ -176,7 +176,7 @@ router.get('/download/:id', authenticateToken, async (req, res) => {
 });
 
 // DELETE /files/:id - Eliminar archivo
-router.delete('/files/:id', authenticateToken, async (req, res) => {
+router.delete('/files/:id', authenticateToken, verificarRol(['profesor', 'admin']), async (req, res) => {
   try {
     const file = await File.findOne({
       _id: req.params.id,
@@ -205,7 +205,8 @@ router.delete('/files/:id', authenticateToken, async (req, res) => {
 });
 
 // PUT /files/:id - Actualizar información del archivo
-router.put('/files/:id', authenticateToken, async (req, res) => {
+router.put('/files/:id', authenticateToken, verificarRol(['profesor', 'admin']), async (req, res) => {
+
   try {
     const { description, category } = req.body;
     
