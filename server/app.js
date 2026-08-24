@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const path = require('path');
 const multer = require('multer');
 dotenv.config();
+const adminRoutes = require('./routes/admin');
 
 const connectDB = require('./db/connection');
 const authRoutes = require('./routes/auth');
@@ -16,6 +17,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/api/admin', adminRoutes);
 
 // Servir archivos estáticos (para las descargas)
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
