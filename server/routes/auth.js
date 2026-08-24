@@ -33,18 +33,23 @@ router.post('/login', async (req, res) => {
   const { email, contrasena } = req.body;
 
   try {
-    const profesor = await User.findOne({ email });
-    if (!profesor) {
+    const usuario = await User.findOne({ email });
+    if (!usuario) {
       return res.status(401).json({ success: false, message: 'Credenciales inválidas' });
     }
 
-    const match = await bcrypt.compare(contrasena, profesor.contrasena);
+    const match = await bcrypt.compare(contrasena, usuario.contrasena);
     if (!match) {
       return res.status(401).json({ success: false, message: 'Credenciales inválidas' });
     }
 
     const token = jwt.sign(
-      { id: profesor._id, nombre: profesor.nombre, email: profesor.email },
+      { 
+        id: usuario._id, 
+        nombre: usuario.nombre, 
+        email: usuario.email, 
+        roles: usuario.roles
+      },
       process.env.JWT_SECRET,
       { expiresIn: '2h' }
     );
