@@ -20,8 +20,8 @@ const fileSchema = new Schema({
 });
 
 // Índices para mejorar la consulta
-fileSchema.index({ professorId: 1, category: 1 });
-fileSchema.index({ professorId: 1, uploadDate: -1 });
+fileSchema.index({ UserId: 1, category: 1 });
+fileSchema.index({ UserId: 1, uploadDate: -1 });
 
 // Middleware para actualizar lastModified
 fileSchema.pre('save', function() {
