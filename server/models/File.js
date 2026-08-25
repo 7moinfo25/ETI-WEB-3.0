@@ -12,7 +12,6 @@ const fileSchema = new Schema({
     enum: ['matematicas','lengua','ciencias','historia','geografia','fisica','quimica','biologia','informatica','tecnologia','ingles','educacion_fisica','arte','musica','general'], 
     default: 'general'},
   UserId: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  UserName: { type: String, required: true},
   uploadDate: { type: Date, default: Date.now},
   lastModified: { type: Date, default: Date.now},
   isPublic: { type: Boolean, default: false},

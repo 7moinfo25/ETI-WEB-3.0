@@ -124,7 +124,6 @@ router.post('/upload', authenticateToken, verificarRol(['profesor', 'admin']), u
       description: description || '',
       category: category || 'general',
       UserId: req.user.id,
-      UserName: req.user.nombre
     });
 
     await newFile.save();
