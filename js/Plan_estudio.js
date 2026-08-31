@@ -359,22 +359,28 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     7: {
       informatica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+        { materia: "Practicas Profesionalizantes del Sector Informatico", horasSemanales: 12, totalHoras: 200,
           pdf: "" },
 
-        { materia: "Desarrollo de Proyectos", horasSemanales: 6, totalHoras: 216,
+        { materia: "Emprendimientos Productivos y Desarrollo Local", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Tecnologías Emergentes", horasSemanales: 3, totalHoras: 108,
+        { materia: "Evalucacion de Proyectos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Modelos y Sistemas", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Legislación y Ética", horasSemanales: 2, totalHoras: 72,
+        { materia: "Bases de Datos", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144,
+        { materia: "Proyecto, Diseño e Implementación de Sistemas Computacionales", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Instalacion, Mantenimiento y Reparacion de Sistemas Computacionales", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Instalación, Mantenimiento y Reparación de Redes Informaticas", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
       ],
       electromecanica: [
