@@ -207,31 +207,40 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     5: {
       informatica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Programación II", horasSemanales: 4, totalHoras: 144,
+        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Geografia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Bases de Datos", horasSemanales: 3, totalHoras: 108,
+        { materia: "Analisis Matematico", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Redes Avanzadas", horasSemanales: 2, totalHoras: 72,
+        { materia: "Sistemas Digitales", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+        { materia: "Teleinformatica", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Sistemas Operativos", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
       electromecanica: [
