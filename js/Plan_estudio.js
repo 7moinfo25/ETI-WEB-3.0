@@ -286,31 +286,46 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     6: {
       informatica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Programación III", horasSemanales: 4, totalHoras: 144,
+        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Sistemas de Información", horasSemanales: 3, totalHoras: 108,
+        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+        { materia: "Filosofia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Seguridad Informática", horasSemanales: 3, totalHoras: 108,
+        { materia: "Matematica Aplicada", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72,
+        { materia: "Sistemas Digitales", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+        { materia: "Investigacion Operativa", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+        
+        { materia: "Seguridad Informatica", horasSemanales: 3, totalHoras: 108, 
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Derecho del Trabajo", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Sistemas Operativos", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
       electromecanica: [
