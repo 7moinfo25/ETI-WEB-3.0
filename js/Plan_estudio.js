@@ -82,28 +82,37 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     3: {
       common: [
+        { materia: "Ciencias Naturales", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Ciencias Sociales", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Construccion de Ciudadania", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
         { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Lengua", horasSemanales: 4, totalHoras: 144,
+        { materia: "Practicas del Lenguaje", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
+        { materia: "Lenguajes Tecnologicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
+        { materia: "Procedimientos Técnicos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108,
+        { materia: "Sistemas Tecnologicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Arte", horasSemanales: 2, totalHoras: 72,
+        { materia: "Edcucacion Artistica", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
     },
