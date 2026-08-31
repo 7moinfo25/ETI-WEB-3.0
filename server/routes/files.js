@@ -9,8 +9,7 @@ const router = express.Router();
 
 // verificacion token JWT
 const authenticateToken = (req, res, next) => {
-  const authHeader = req.headers['authorization'];
-  const token = authHeader && authHeader.split(' ')[1];
+  const token = req.cookies.token;
 
   if (!token) {
     return res.status(401).json({ success: false, message: 'Token requerido' });
@@ -18,7 +17,7 @@ const authenticateToken = (req, res, next) => {
 
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
     if (err) {
-      return res.status(403).json({ success: false, message: 'Token inválido' }); 
+      return res.status(403).json({ success: false, message: 'Token inválido' });
     }
     req.user = user;
     next();
@@ -32,7 +31,7 @@ const verificarRol = (rolesPermitidos) => {
     const tieneAcceso = rolesPermitidos.some(rol => roles.includes(rol)); // 
 
     if (!tieneAcceso) {
-      return res.status(403).json({ success: false, message: 'No tenés permiso para esto' }); 
+      return res.status(403).json({ success: false, message: 'No tenés permiso para esto' });
     }
     next();
   };
@@ -42,7 +41,7 @@ const verificarRol = (rolesPermitidos) => {
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const uploadPath = path.join(__dirname, '../uploads');
-    
+
     // Si no existe la carpeta, la crea automáticamente
     fs.mkdir(uploadPath, { recursive: true })
       .then(() => cb(null, uploadPath))
@@ -95,7 +94,7 @@ router.get('/files', authenticateToken, async (req, res) => {
   try {
     const files = await File.find({ UserId: req.user.id })
       .sort({ uploadDate: -1 });
-    
+
     res.json({ success: true, files });
   } catch (error) {
     console.error('Error al obtener archivos:', error);
@@ -212,7 +211,7 @@ router.put('/files/:id', authenticateToken, verificarRol(['profesor', 'admin']),
 
   try {
     const { description, category } = req.body;
-    
+
     const file = await File.findOneAndUpdate(
       { _id: req.params.id, UserId: req.user.id },
       { description, category },

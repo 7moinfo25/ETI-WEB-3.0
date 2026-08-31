@@ -43,21 +43,26 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ success: false, message: 'Credenciales inválidas' });
     }
 
-    const token = jwt.sign(
-      { 
-        id: usuario._id, 
-        nombre: usuario.nombre, 
-        email: usuario.email, 
-        roles: usuario.roles
-      },
-      process.env.JWT_SECRET,
-      { expiresIn: '2h' }
-    );
-
-    res.json({ success: true, message: 'Login exitoso', token });
+    res.cookie('token', token, { //El token entre ' ' es el nombre de la Cookie
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production', // solo HTTPS en prod, en dev funciona sin HTTPS
+      sameSite: 'Strict',
+      maxAge: 2 * 60 * 60 * 1000 // 2 horas en milisegundos, igual que el JWT
+    })
+    res.json({ success: true, message: 'Login exitoso' });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error del servidor' });
   }
+});
+
+// POST /logout
+router.post('/logout', (req, res) => {
+  res.clearCookie('token', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'Strict'
+  });
+  res.json({ success: true, message: 'Sesión cerrada' });
 });
 
 module.exports = router;
