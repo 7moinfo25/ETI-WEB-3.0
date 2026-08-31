@@ -119,31 +119,46 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ciclo superior - Informática (4to a 7mo)
     4: {
       informatica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Programación I", horasSemanales: 4, totalHoras: 144,
+        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
+        { materia: "Salud y Adolecencia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Sistemas Operativos", horasSemanales: 3, totalHoras: 108,
+        { materia: "Geografia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Redes", horasSemanales: 2, totalHoras: 72,
+        { materia: "Matematica", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+        { materia: "Fisica", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Quimica", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+        
+        { materia: "Tecnologias Electricas", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Sistemas Operativos", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
       electromecanica: [
