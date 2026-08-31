@@ -10,29 +10,32 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ciclo básico (1ro a 3ro)
     1: {
       common: [
+        { materia: "Ciencias Naturales", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Ciencias Sociales", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Construccion de Ciudadania", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Ingles", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
         { materia: "Matemática", horasSemanales: 4, totalHoras: 144, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/matematica.pdf" },
+          pdf: "" },
+        
+        { materia: "Practicas del Lenguaje", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
 
-        { materia: "Lengua", horasSemanales: 4, totalHoras: 144, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/lengua.pdf" },
+        { materia: "Lenguajes Tecnologicos", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
 
-        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ciudadania.pdf" },
+        { materia: "Procedimientos Técnicos", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
 
-        { materia: "Sistemas Tecnológicos", horasSemanales: 3, totalHoras: 108, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/sistemas-tecnologicos.pdf" },
-
-        { materia: "Ciencias Naturales", horasSemanales: 3, totalHoras: 108, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ciencias-naturales.pdf" },
-
-        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/educacion-fisica.pdf" },
-
-        { materia: "Inglés", horasSemanales: 2, totalHoras: 72, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/ingles.pdf" },
-
-        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72, 
-          pdf: "https://abc.gob.ar/secretarias/sites/default/files/2021-05/educacion-artistica.pdf" },
+        { materia: "Sistemas Tecnologicos", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
       ],
     },
     2: {
@@ -120,31 +123,46 @@ document.addEventListener("DOMContentLoaded", () => {
           pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Electrotecnia I", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Física", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Mecánica", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Salud y Adolecencia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Química", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Conocimiento de los Materiales", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Dibujo Tecnologico", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Intalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
@@ -178,31 +196,43 @@ document.addEventListener("DOMContentLoaded", () => {
           pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Electrotecnia II", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Física", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Automatización", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Dibujo Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Politica y Ciudadania", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Analisis Matemático", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Mecanica y Mecanismos", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Resistencia y Ensayos de los Materiales", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Intalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },

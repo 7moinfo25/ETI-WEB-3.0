@@ -25,6 +25,9 @@
             <li class="nav-item">
                 <a href="biblioteca.php" class="nav-link <?php echo ($current_page == 'biblioteca.php') ? 'active' : ''; ?>">Biblioteca</a>
             </li>
+            <li class="nav-item">
+                <a href="Plan_estudio.php" class="nav-link <?php echo ($current_page == 'Plan_estudio.php') ? 'active' : ''; ?>">Plan de Estudio</a>
+            </li>
         </ul>
     </div>
 </nav>
