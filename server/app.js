@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middlewares
 app.use(cors({
-  origin: 'http://localhost:27017',  // dominio del frontend (Laragon)
+  origin: 'http://localhost',  // dominio del frontend (Laragon)
   credentials: true            // permite que se manden cookies
 }));
 app.use(express.json());

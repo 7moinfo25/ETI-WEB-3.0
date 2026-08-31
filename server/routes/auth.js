@@ -43,14 +43,27 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ success: false, message: 'Credenciales inválidas' });
     }
 
+    const token = jwt.sign(
+      {
+        id: usuario._id,
+        nombre: usuario.nombre,
+        email: usuario.email,
+        roles: usuario.roles
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: '2h' }
+    );
+
     res.cookie('token', token, { //El token entre ' ' es el nombre de la Cookie
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production', // solo HTTPS en prod, en dev funciona sin HTTPS
-      sameSite: 'Strict',
+      sameSite: 'Lax',
       maxAge: 2 * 60 * 60 * 1000 // 2 horas en milisegundos, igual que el JWT
     })
+    // console.log('Cookie seteada'); Para ver que si la cookie se setea
     res.json({ success: true, message: 'Login exitoso' });
   } catch (error) {
+    // console.error('Error en login:', error);  Para ver si salta algún error en el login
     res.status(500).json({ success: false, message: 'Error del servidor' });
   }
 });
