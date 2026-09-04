@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Intalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
+        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Intalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
+        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
@@ -329,31 +329,46 @@ document.addEventListener("DOMContentLoaded", () => {
           pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Electrotecnia III", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Máquinas Eléctricas", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Lengua", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Control Industrial", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Proyecto Integrador", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Taller Práctico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Filosofia", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Matematica Aplicada", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Termodinamica y Maquinas Termicas", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Sistemas Mecanicas", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Derecho del Trabajo", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Laboratorio de Medeiciones Electricas", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
