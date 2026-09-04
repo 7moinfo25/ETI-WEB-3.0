@@ -46,7 +46,7 @@
 
 
                     <p>
-                        Qué ofrece la biblioteca?
+                     Qué ofrece la biblioteca?
 Libros técnicos de Informática y Electromecánica.
 Manuales de programación, hardware y redes.
 Material de consulta para Matemática, Física y Química.
