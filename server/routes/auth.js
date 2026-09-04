@@ -73,6 +73,22 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// GET /api/me — verifica el token de la cookie y devuelve el usuario
+router.get('/me', (req, res) => {
+  const token = req.cookies.token;
+
+  if (!token) {
+    return res.status(401).json({ error: 'No autenticado' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    res.json({ id: decoded.id, nombre: decoded.nombre, email: decoded.email, roles: decoded.roles });
+  } catch (err) {
+    return res.status(401).json({ error: 'Token inválido o expirado' });
+  }
+});
+
 // POST /logout
 router.post('/logout', (req, res) => {
   res.clearCookie('token', {
