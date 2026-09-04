@@ -18,10 +18,15 @@ router.post('/register', async (req, res) => {
     }
 
     const contrasenaHasheada = await bcrypt.hash(contrasena, 10);
-
-    const nuevoUser = new User({ nombre, email, contrasena: contrasenaHasheada });
-    await nuevoUser.save();
-
+    const hayUsuarios = await User.findOne();
+    if (!hayUsuarios) {
+      const nuevoUser = new User({ nombre, email, contrasena: contrasenaHasheada, roles: ['admin', 'profesor'] });
+      await nuevoUser.save();
+    } else {
+      const nuevoUser = new User({ nombre, email, contrasena: contrasenaHasheada, roles: ['alumno'] });
+      await nuevoUser.save();
+    }
+    
     res.status(201).json({ success: true, message: 'Registro exitoso' });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error al registrar usuario' });
