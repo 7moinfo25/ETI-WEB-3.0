@@ -399,22 +399,34 @@ document.addEventListener("DOMContentLoaded", () => {
           pdf: "" },
       ],
       electromecanica: [
-        { materia: "Matemática Aplicada", horasSemanales: 3, totalHoras: 108,
+        { materia: "Practicas Profesionalizantes del Sector Electromecanico", horasSemanales: 12, totalHoras: 200,
           pdf: "" },
 
-        { materia: "Proyecto Técnico", horasSemanales: 6, totalHoras: 216,
+        { materia: "Emprendimientos Productivos y Desarrollo Local", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Innovación Tecnológica", horasSemanales: 3, totalHoras: 108,
+        { materia: "Electronica Industrial", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Inglés Técnico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Seguridad, Higiene y Protección Ambiental", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Legislación Laboral", horasSemanales: 2, totalHoras: 72,
+        { materia: "Maquinas Electricas", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Práctica Profesional", horasSemanales: 4, totalHoras: 144,
+        { materia: "Sistemas Mecanicos", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Laboratorio de Metodologia y Control de Calidad", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Mantenimiento y Montaje Electromecanico", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Proyecto y Diseño Electromecanico", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Proyecto y Diseño de Instalaciones Electricas", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
       ],
     },
