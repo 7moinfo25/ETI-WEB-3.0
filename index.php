@@ -62,7 +62,7 @@ if (!empty($_COOKIE['token'])) {
                             <i class="fas fa-folder-open"></i>&nbsp; Acceder a la interfaz
                         </button>
                     </a>
-                    <button id="btnLogout" class="btn btn-outline" style="width: 100%;">
+                    <button id="btnLogout" class="btn btn-outline" style="background-color: black; color: white;">
                         <i class="fas fa-sign-out-alt"></i>&nbsp; Cerrar sesión
                     </button>
                 </div>
