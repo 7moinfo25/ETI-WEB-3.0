@@ -168,4 +168,9 @@ tr:nth-child(even){
   .subtitle {
     font-size: 1rem;
   }
+
+  .plan-table td:nth-child(2),
+  .plan-table td:nth-child(3) {
+    padding-left: 30px;
+}
 }

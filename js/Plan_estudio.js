@@ -16,31 +16,31 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Ciencias Sociales", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
 
-        { materia: "Construccion de Ciudadania", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
         { materia: "Matemática", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
         
-        { materia: "Practicas del Lenguaje", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Prácticas del Lenguaje", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
 
-        { materia: "Lenguajes Tecnologicos", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Lenguajes Tecnológicos", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
         { materia: "Procedimientos Técnicos", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Sistemas Tecnologicos", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Sistemas Tecnológicos", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Edcucacion Artistica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
     },
@@ -52,31 +52,31 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Ciencias Sociales", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Construccion de Ciudadania", horasSemanales: 2, totalHoras: 72,
+        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Practicas del Lenguaje", horasSemanales: 4, totalHoras: 144,
+        { materia: "Prácticas del Lenguaje", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Lenguajes Tecnologicos", horasSemanales: 2, totalHoras: 72,
+        { materia: "Lenguajes Tecnológicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Procedimientos Técnicos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Sistemas Tecnologicos", horasSemanales: 2, totalHoras: 72,
+        { materia: "Sistemas Tecnológicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Edcucacion Artistica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
     },
@@ -88,68 +88,69 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Ciencias Sociales", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Construccion de Ciudadania", horasSemanales: 2, totalHoras: 72,
+        { materia: "Construcción de Ciudadanía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Practicas del Lenguaje", horasSemanales: 4, totalHoras: 144,
+        { materia: "Prácticas del Lenguaje", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Lenguajes Tecnologicos", horasSemanales: 2, totalHoras: 72,
+        { materia: "Lenguajes Tecnológicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Procedimientos Técnicos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Sistemas Tecnologicos", horasSemanales: 2, totalHoras: 72,
+        { materia: "Sistemas Tecnológicos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Edcucacion Artistica", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Educación Artística", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
     },
+    
     // Ciclo superior - Informática (4to a 7mo)
     4: {
       informatica: [
         { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Salud y Adolecencia", horasSemanales: 2, totalHoras: 72,
+        { materia: "Salud y Adolescencia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Historia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Geografia", horasSemanales: 2, totalHoras: 72,
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Matematica", horasSemanales: 4, totalHoras: 144,
+        { materia: "Matemática", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Fisica", horasSemanales: 3, totalHoras: 108,
+        { materia: "Física", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Quimica", horasSemanales: 2, totalHoras: 72,
+        { materia: "Química", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
         
-        { materia: "Tecnologias Electricas", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Tecnologías Eléctricas", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Laboratorio de Programación", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
         { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
@@ -161,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
+      
       electromecanica: [
         { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
@@ -171,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Salud y Adolecencia", horasSemanales: 2, totalHoras: 72,
+        { materia: "Salud y Adolescencia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Historia", horasSemanales: 2, totalHoras: 72,
@@ -192,58 +194,22 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Conocimiento de los Materiales", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Dibujo Tecnologico", horasSemanales: 2, totalHoras: 72,
+        { materia: "Dibujo Tecnológico", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+        { materia: "Máquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
+        { materia: "Diseño y Procesamiento Mecánico", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
+        { materia: "Instalaciones y Aplicaciones de la Energía", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
+    
     5: {
       informatica: [
-        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Geografia", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Analisis Matematico", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Sistemas Digitales", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Teleinformatica", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
-          pdf: "" },
-
-        { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
-          pdf: "" },
-
-        { materia: "Laboratorio de Sistemas Operativos", horasSemanales: 4, totalHoras: 144, 
-          pdf: "" },
-
-        { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
-          pdf: "" },
-      ],
-      electromecanica: [
         { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
@@ -251,9 +217,6 @@ document.addEventListener("DOMContentLoaded", () => {
           pdf: "" },
 
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Politica y Ciudadania", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Historia", horasSemanales: 2, totalHoras: 72,
@@ -262,61 +225,16 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Analisis Matemático", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Mecanica y Mecanismos", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Electrotecnia", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Resistencia y Ensayos de los Materiales", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-
-        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-
-        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
-          pdf: "" },
-      ],
-    },
-    6: {
-      informatica: [
-        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Ingles", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Educacion Fisica", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Filosofia", horasSemanales: 2, totalHoras: 72,
-          pdf: "" },
-
-        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
-          pdf: "" },
-
-        { materia: "Matematica Aplicada", horasSemanales: 2, totalHoras: 72,
+        { materia: "Análisis Matemático", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
         { materia: "Sistemas Digitales", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Investigacion Operativa", horasSemanales: 3, totalHoras: 108,
-          pdf: "" },
-        
-        { materia: "Seguridad Informatica", horasSemanales: 3, totalHoras: 108, 
+        { materia: "Teleinformática", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Derecho del Trabajo", horasSemanales: 2, totalHoras: 72, 
-          pdf: "" },
-
-        { materia: "Laboratorio de Programacion", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Laboratorio de Programación", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
         { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
@@ -328,6 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
       ],
+      
       electromecanica: [
         { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
@@ -338,49 +257,137 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Filosofia", horasSemanales: 2, totalHoras: 72,
+        { materia: "Política y Ciudadanía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Historia", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Matematica Aplicada", horasSemanales: 2, totalHoras: 72,
+        { materia: "Geografía", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Termodinamica y Maquinas Termicas", horasSemanales: 3, totalHoras: 108,
+        { materia: "Análisis Matemático", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Mecánica y Mecanismos", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
         { materia: "Electrotecnia", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Sistemas Mecanicas", horasSemanales: 3, totalHoras: 108,
+        { materia: "Resistencia y Ensayos de los Materiales", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Máquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Diseño y Procesamiento Mecánico", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+
+        { materia: "Instalaciones y Aplicaciones de la Energía", horasSemanales: 4, totalHoras: 144,
+          pdf: "" },
+      ],
+    },
+    
+    6: {
+      informatica: [
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Filosofía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Matemática Aplicada", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Sistemas Digitales", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Investigación Operativa", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+        
+        { materia: "Seguridad Informática", horasSemanales: 3, totalHoras: 108, 
+          pdf: "" },
+
+        { materia: "Derecho del Trabajo", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Programación", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Hardware", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Sistemas Operativos", horasSemanales: 4, totalHoras: 144, 
+          pdf: "" },
+
+        { materia: "Laboratorio de Aplicaciones", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+      ],
+      
+      electromecanica: [
+        { materia: "Literatura", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Inglés", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Educación Física", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Filosofía", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Arte", horasSemanales: 2, totalHoras: 72, 
+          pdf: "" },
+
+        { materia: "Matemática Aplicada", horasSemanales: 2, totalHoras: 72,
+          pdf: "" },
+
+        { materia: "Termodinámica y Máquinas Térmicas", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Electrotecnia", horasSemanales: 3, totalHoras: 108,
+          pdf: "" },
+
+        { materia: "Sistemas Mecánicos", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
         { materia: "Derecho del Trabajo", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Laboratorio de Medeiciones Electricas", horasSemanales: 2, totalHoras: 72,
+        { materia: "Laboratorio de Mediciones Eléctricas", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Maquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
+        { materia: "Máquinas Eléctricas y Automatismos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Diseño y Procesamiento Mecanico", horasSemanales: 4, totalHoras: 144,
+        { materia: "Diseño y Procesamiento Mecánico", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Instalaciones y Aplicaciones de la Energia", horasSemanales: 4, totalHoras: 144,
+        { materia: "Instalaciones y Aplicaciones de la Energía", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
       ],
     },
+    
     7: {
       informatica: [
-        { materia: "Practicas Profesionalizantes del Sector Informatico", horasSemanales: 12, totalHoras: 200,
+        { materia: "Prácticas Profesionalizantes del Sector Informático", horasSemanales: 12, totalHoras: 200,
           pdf: "" },
 
         { materia: "Emprendimientos Productivos y Desarrollo Local", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Evalucacion de Proyectos", horasSemanales: 2, totalHoras: 72,
+        { materia: "Evaluación de Proyectos", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Modelos y Sistemas", horasSemanales: 2, totalHoras: 72,
@@ -392,45 +399,46 @@ document.addEventListener("DOMContentLoaded", () => {
         { materia: "Proyecto, Diseño e Implementación de Sistemas Computacionales", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Instalacion, Mantenimiento y Reparacion de Sistemas Computacionales", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Instalación, Mantenimiento y Reparación de Sistemas Computacionales", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
 
-        { materia: "Instalación, Mantenimiento y Reparación de Redes Informaticas", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Instalación, Mantenimiento y Reparación de Redes Informáticas", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
       ],
+      
       electromecanica: [
-        { materia: "Practicas Profesionalizantes del Sector Electromecanico", horasSemanales: 12, totalHoras: 200,
+        { materia: "Prácticas Profesionalizantes del Sector Electromecánico", horasSemanales: 12, totalHoras: 200,
           pdf: "" },
 
         { materia: "Emprendimientos Productivos y Desarrollo Local", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Electronica Industrial", horasSemanales: 2, totalHoras: 72,
+        { materia: "Electrónica Industrial", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
         { materia: "Seguridad, Higiene y Protección Ambiental", horasSemanales: 2, totalHoras: 72,
           pdf: "" },
 
-        { materia: "Maquinas Electricas", horasSemanales: 3, totalHoras: 108,
+        { materia: "Máquinas Eléctricas", horasSemanales: 3, totalHoras: 108,
           pdf: "" },
 
-        { materia: "Sistemas Mecanicos", horasSemanales: 4, totalHoras: 144,
+        { materia: "Sistemas Mecánicos", horasSemanales: 4, totalHoras: 144,
           pdf: "" },
 
-        { materia: "Laboratorio de Metodologia y Control de Calidad", horasSemanales: 2, totalHoras: 72, 
+        { materia: "Laboratorio de Metodología y Control de Calidad", horasSemanales: 2, totalHoras: 72, 
           pdf: "" },
 
-        { materia: "Mantenimiento y Montaje Electromecanico", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Mantenimiento y Montaje Electromecánico", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
 
-        { materia: "Proyecto y Diseño Electromecanico", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Proyecto y Diseño Electromecánico", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
 
-        { materia: "Proyecto y Diseño de Instalaciones Electricas", horasSemanales: 4, totalHoras: 144, 
+        { materia: "Proyecto y Diseño de Instalaciones Eléctricas", horasSemanales: 4, totalHoras: 144, 
           pdf: "" },
       ],
     },
-  }
+  };
 
   // Función para actualizar la tabla
   function updatePlan() {
