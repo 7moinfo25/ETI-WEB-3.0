@@ -6,6 +6,8 @@
     <title>Escuela Técnica</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/estadisticas.css">
+    <link rel="stylesheet" href="css/boton_mapa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="imagenes/escudo.png" type="image/png">
 </head>
@@ -41,23 +43,73 @@
     <main>
         <!-- Welcome Section -->
         <section class="welcome-section">
-            <div class="container">
-                <div class="welcome-grid">
-                    <div class="welcome-content">
-                        <h1>Bienvenidos a nuestra <br> Escuela Técnica <br> Gral. Manuel Belgrano</h1>
-                        <p>Formando profesionales con excelencia académica y valores humanos para construir un futuro mejor.</p>
-                        <div class="button-group">
-                            <a href="conocemas.php"><button class="btn btn-primary">Conoce más sobre nosotros</button></a>
-                            <a href="#redirect-contacto"><button class="btn btn-outline">Contacto</button></a>
-                        </div>
-                    </div>
-                    <div class="welcome-image">
-                        <img src="imagenes/escuelafoto.jpeg" alt="Escuela Técnica" id="fotoEsc">
-                    </div>
+    <div class="container">
+        <div class="welcome-grid">
+            <div class="welcome-content">
+                <h1>Bienvenidos a nuestra <br> Escuela Técnica <br> Gral. Manuel Belgrano</h1>
+
+                <p>
+                    Formando profesionales con excelencia académica y valores humanos
+                    para construir un futuro mejor.
+                </p>
+
+                <div class="button-group">
+                    <a href="conocemas.php">
+                        <button class="btn btn-primary">
+                            Conoce más sobre nosotros
+                        </button>
+                    </a>
+
+                    <a href="#redirect-contacto">
+                        <button class="btn btn-outline">
+                            Contacto
+                        </button>
+                    </a>
                 </div>
             </div>
-        </section>
 
+            <div class="welcome-image">
+                <img src="imagenes/escuelafoto.jpeg"
+                     alt="Escuela Técnica"
+                     id="fotoEsc">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!--ESTADISTICAS-->
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="64">0</h2>
+                
+            </div>
+            <p>Años de trayectoria</p>
+        </div>
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="377">0</h2>
+    
+            </div>
+            <p>Estudiantes activos</p>
+        </div>
+
+        <div class="stat">
+            <div class="number">
+                <h2 class="counter" data-target="2">0</h2>
+            </div>
+            <p>Especialidades técnicas</p>
+        </div>
+
+    </div>
+
+</section>
+
+</section>
         <!-- Main Content with News on Right -->
         <section class="main-content">
             <div class="container">
@@ -94,12 +146,24 @@
                             </div>
                         </div>
                         <h2>Encontranos en:</h2>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
-integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
-crossorigin=""/>
+                        
+                        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+                        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
+                        crossorigin=""/>
 
-<!-- Tu HTML donde quieres mostrar el mapa -->
-<div id="mapa" style="width: 100%; height: 400px; border-radius: 10px;"></div>
+                        <!-- Tu HTML donde quieres mostrar el mapa -->
+                        <div id="mapa" style="width: 100%; height: 400px; border-radius: 10px;"></div>
+
+<!-- boton del mapa -->
+<a
+  class="map-btn-wrapper"
+  href="https://maps.app.goo.gl/aaeUxEye4HNBApg48"
+  target="_blank">
+
+  <span class="map-btn">Google Maps</span>
+  <span class="pinpoint"></span>
+
+</a>
 
 <!-- Al final de tu body -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
@@ -107,40 +171,7 @@ integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 crossorigin=""></script>
 
 <!-- Función de mapa -->
-<script>
-// Inicializar el mapa
-const mapa = L.map('mapa').setView([-36.02054340825117, -59.102123271464116], 17); // Coordenadas aproximadas de Buenos Aires, ajustar según tu ubicación
-
-// Añadir capa de OpenStreetMap
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mapa);
-
-// Añadir marcador para la Escuela de Educación Técnica N°1
-// Reemplaza estas coordenadas con las exactas de la escuela
-const coordenadas = [-36.02054340825117, -59.102123271464116]; 
-
-// Crear icono personalizado similar al de Google Maps
-const iconoEscuela = L.icon({
-iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-iconSize: [25, 41],
-iconAnchor: [12, 41],
-popupAnchor: [1, -34],
-shadowSize: [41, 41]
-});
-
-// Añadir el marcador al mapa
-const marcador = L.marker(coordenadas, {icon: iconoEscuela}).addTo(mapa);
-
-// Añadir popup con información
-marcador.bindPopup("<b>Escuela de Educación Técnica N°1</b>").openPopup();
-
-// Añadir controles de zoom
-L.control.zoom({
-position: 'bottomright'
-}).addTo(mapa);
-</script>
+<script src="js/script/mapa.js"></script>
 
                     </div>
 
@@ -167,5 +198,7 @@ position: 'bottomright'
     <script src="js/login.js"></script>
     <script src="js/script.js"></script>
     <script src="js/easteregg.js"></script>
+    <script src="js/estadisticas.js"></script>
+    <script src="js/script/parallax.js"></script>
 </body>
 </html>
