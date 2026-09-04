@@ -50,21 +50,34 @@ form.addEventListener('submit', async (e) => {
 
     const data = await res.json();
 
-    if (data.success) {
-      mensaje.textContent = esRegistro ? 'Registro exitoso. Ahora puedes iniciar sesión.' : 'Inicio de sesión exitoso.';
-      mensaje.style.color = 'green';
+    console.log(data);
 
-      if (!esRegistro) {
+if (data.success) {
+    mensaje.textContent = esRegistro
+        ? 'Registro exitoso. Ahora puedes iniciar sesión.'
+        : 'Inicio de sesión exitoso.';
+
+    mensaje.style.color = 'green';
+
+    if (esRegistro) {
+        alert('REGISTRO EXITOSO');
+
+        sessionStorage.setItem('abrirLogin', 'true');
+        window.location.href = 'index.php';
+
+    } else {
         localStorage.setItem('token', data.token);
         window.location.href = 'interfazProfe.php';
-      }
-    } else {
-      mensaje.textContent = data.message || 'Ocurrió un error.';
-      mensaje.style.color = 'red';
     }
-  } catch (err) {
+
+} else {
+    mensaje.textContent = data.message || 'Ocurrió un error.';
+    mensaje.style.color = 'red';
+}
+
+} catch (err) {
     console.error(err);
     mensaje.textContent = 'Error de conexión con el servidor.';
     mensaje.style.color = 'red';
-  }
+}
 });

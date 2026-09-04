@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const loginTrigger = document.getElementById('login-trigger');
     const loginModal = document.getElementById('login-modal');
     const closeLogin = document.getElementById('close-login');
-    const loginForm = document.getElementById('login-form');
+    const loginForm = document.getElementById('auth-form');
 
     // Abre modal con la esquina
     loginTrigger.addEventListener('click', function() {
@@ -23,4 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.overflow = '';
         }
     });
+
+// Abrir automáticamente el login después del registro
+if (sessionStorage.getItem('abrirLogin') === 'true') {
+    loginModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    sessionStorage.removeItem('abrirLogin');
+}
 });

@@ -31,6 +31,7 @@ router.post('/register', async (req, res) => {
 
 // POST /login
 router.post('/login', async (req, res) => {
+  console.log('🔵 SE EJECUTÓ LA RUTA LOGIN');
   const { email, contrasena } = req.body;
 
   try {
@@ -51,9 +52,14 @@ router.post('/login', async (req, res) => {
     );
 
     res.json({ success: true, message: 'Login exitoso', token });
-  } catch (error) {
-    res.status(500).json({ success: false, message: 'Error del servidor' });
-  }
+} catch (error) {
+    console.error('❌ ERROR LOGIN:', error);
+    res.status(500).json({
+        success: false,
+        message: 'Error del servidor',
+        error: error.message
+    });
+}
 });
 
 module.exports = router;
